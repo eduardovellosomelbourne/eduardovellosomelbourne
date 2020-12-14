@@ -1,6 +1,6 @@
 /* NAVBAR */
 .ev-navbar{
-  margin-top: var(--space-md);
+  margin-top: var(--space-xl);
   margin-bottom: var(--space-md);
   letter-spacing: var(--space-xxs);
 }
@@ -43,6 +43,10 @@
 
 
 @media (min-width: 1120px) {
+  .ev-navbar{
+    margin-top: var(--space-md);
+  }
+  
   .ev-navbar--list {
     --space: 1.5rem;
     display: flex;
