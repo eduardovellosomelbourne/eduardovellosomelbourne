@@ -18,11 +18,11 @@
 } 
 
 .ev-navbar--list > * + * {
-  margin-top: var(--space);
+  margin-top: var(--space-lg);
 }
 
 .ev-navbar--link {
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
   color: var(--black);
 }
 
@@ -59,4 +59,9 @@
     margin-top: 0;
     margin-left: var(--space);
   }
+
+  .ev-navbar--link {
+    padding-bottom: 1em;
+  }
 }
+
