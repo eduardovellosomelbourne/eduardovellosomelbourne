@@ -74,6 +74,10 @@ a:hover{
 }
 
 /* HOME */
+.ev-sitetitle--title{
+  margin: var(--space-sm);
+  font-size: var(--text-xxxl);
+}
 .ev-sitetitle--subtitle{
   font-weight: 300;
   font-size: var(--text-md);
