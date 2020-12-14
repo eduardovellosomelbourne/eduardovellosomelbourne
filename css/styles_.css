@@ -1,0 +1,248 @@
+/* BASE STYLES */
+.ev-site {
+  max-width: 1600px;
+  margin: 0 auto;
+  font-size: 18px;
+  padding: var(--space-sm);
+}
+
+.ev-home-container {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.ev-page-title {
+  padding-bottom: 20px;
+  font: bold 1.5em/1.71em Proxima Nova, sans-serif;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+/* NAVBAR */
+.ev-navbar {
+  padding: 1em;
+  color: #000;
+  font: Semibold 1em/1em Proxima Nova, sans-serif;
+  letter-spacing: 4.31px;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.ev-navbar > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ev-navbar--link {
+  margin: 0.2em 0;
+  padding-right: 1em;
+}
+
+/* SITE TITLE */
+.ev-sitetitle {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.ev-sitetitle--title {
+  padding-bottom: 20px;
+  font: bold 1em/1.21em Proxima Nova, sans-serif;
+  letter-spacing: 20.33px;
+  text-align: center;
+}
+
+.ev-sitetitle--subtitle {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font: normal 0.8em/1.5em Proxima Nova, sans-serif;
+  letter-spacing: 0.5em;
+}
+
+.ev-sitetitle--horizontal-line {
+  width: 50%;
+  border: none;
+  height: 1px;
+  margin: 0 auto;
+  color: #333; /* old IE */
+  background-color: #333; /* Modern Browsers */
+}
+
+/* PROFILE PICTURE */
+.ev-profilepic > img {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+/* HOME GRID LAYOUT */
+@supports (grid-area: auto) {
+  .ev-home-container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    grid-template-areas: "title" "picture" "navbar";
+  }
+
+  .ev-sitetitle {
+    grid-area: title;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ev-navbar {
+    grid-area: navbar;
+  }
+
+  .ev-profilepic {
+    grid-area: picture;
+  }
+
+  @media (min-width: 340px) {
+    .ev-sitetitle--title {
+      font-size: 2em;
+    }
+  }
+
+  @media (min-width: 600px) {
+    .ev-profilepic > img {
+      height: 50vh;
+      width: auto;
+    }
+  }
+
+  @media (min-width: 1120px) {
+    .ev-home-container {
+      grid-template-rows: auto auto;
+      grid-template-columns: 2fr 1fr;
+      grid-template-areas: "navbar ." "title picture";
+    }
+
+    .ev-sitetitle--title {
+      font-size: 3em;
+      padding-bottom: 30px;
+    }
+
+    .ev-sitetitle--subtitle {
+      font-size: 1.1em;
+      padding-top: 30px;
+    }
+
+    .ev-profilepic > img {
+      height: auto;
+      width: 700px;
+    }
+  }
+}
+
+/* PUBLICATIONS */
+.ev-bib-year {
+  margin-bottom: 1em;
+}
+
+.ev-bib-year--heading {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.ev-bib-entry {
+  padding-bottom: 1em;
+}
+
+.ev-bib-entry--title {
+  padding-bottom: 0.4em;
+  font-size: 0.9em;
+}
+
+.ev-bib-entry--author-list {
+  padding-bottom: 0.4em;
+  font-size: 0.85em;
+}
+
+.ev-bib-entry--venue {
+  padding-bottom: 0.4em;
+  font-size: 0.85em;
+  font-style: italic;
+}
+
+.ev-bib-entry--tag-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.ev-bib-entry--tag {
+  font: inherit;
+  margin-right: 5px;
+  margin-top: 5px;
+  padding: 9px 16px 9px 16px;
+  text-transform: uppercase;
+  font-size: x-small;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  color: white;
+  border-radius: 16px;
+  background: #555a86;
+  border-style: none;
+}
+
+.ev-bib-entry-tag__venue-type {
+  background: #ef73a1;
+}
+
+/* FILTER */
+.ev-publication-filter--title {
+  padding-bottom: 0.4em;
+  font-size: 1.2em;
+}
+
+.ev-publication-filter--filter {
+  padding-bottom: 0.4em;
+  font-size: 0.9em;
+}
+
+.ev-publication-filter--group {
+  padding-bottom: 1em;
+}
+
+@supports (grid-area: auto) {
+  .ev-publications-page {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    grid-template-areas: "navbar" "title" "publications" "filters";
+  }
+
+  .ev-publications-page .ev-page-title {
+    grid-area: title;
+  }
+
+  .ev-publications-page .ev-publication-list {
+    grid-area: publications;
+  }
+
+  .ev-publications-page .ev-publication-filter {
+    grid-area: filters;
+  }
+
+  .ev-publications-page .ev-navbar {
+    grid-area: navbar;
+    padding-left: 0;
+  }
+
+  .ev-publications-page .ev-navbar > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+
+  @media (min-width: 1120px) {
+    .ev-publications-page {
+      grid-template-rows: auto auto auto;
+      grid-template-columns: auto 300px;
+      grid-template-areas: "navbar navbar" "title ." "publications filters";
+      column-gap: 1em;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.ev-profilepic{
+  width: 1rem;
+}
+
+.ev-profilepic > img{
+  height:100%;
+}
+

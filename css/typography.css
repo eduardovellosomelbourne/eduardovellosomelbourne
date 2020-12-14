@@ -1,0 +1,75 @@
+@import url("https://use.typekit.net/tmv1yiw.css");
+
+:root {
+  --font-primary: proxima-nova, sans-serif;
+
+  /* set base values */
+  --text-base-size: 1rem;
+  --text-scale-ratio: 1.2;
+
+  /* type scale */
+  --text-xs: calc(1em / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+  --text-sm: calc(1em / var(--text-scale-ratio));
+  --text-md: calc(1em * var(--text-scale-ratio));
+  --text-lg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xxl: calc(
+    1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio)
+  );
+  --text-xxxl: calc(
+    1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) *
+      var(--text-scale-ratio)
+  );
+}
+
+body {
+  font-size: var(--text-base-size);
+  font-family: var(--font-primary);
+  color: var(--color-text);
+}
+
+h1 {
+  font-size: var(--text-xxl);
+  text-transform: uppercase;
+  letter-spacing: var(--space-xxs);
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+
+h2 {
+  font-size: var(--text-lg);
+  margin-top: var(--space-md);
+}
+
+h3 {
+  font-size: var(--text-base-size);
+  margin-top: var(--space-unit);
+}
+
+p {
+  font-size: var(--text-base-size);
+  margin-top: var(--space-xxs);
+}
+
+nav {
+  font-size: var(--text-md);
+  text-transform: uppercase;
+}
+
+.italic{
+  font-style: italic;
+}
+
+.large-paragraph{
+    font-size: var(--text-lg);
+    margin-top: var(--space-xxs);
+    line-height: var(--text-lg);
+}
+
+/* HOME */
+.ev-sitetitle--subtitle{
+  font-weight: 300;
+  font-size: var(--text-md);
+  letter-spacing: var(--space-xxs);
+  text-transform: uppercase;
+}
