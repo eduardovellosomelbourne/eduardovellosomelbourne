@@ -23,10 +23,24 @@
 
 .ev-navbar--link {
   padding-bottom: 1em;
+  color: var(--black);
+}
+
+.ev-navbar--link:visited{
+  color: var(--black);
+}
+
+.ev-navbar--link:hover{
+  text-decoration: none;
+  color: var(--color-secondary);
 }
 .ev-navbar--link__active{
   border-bottom: solid 1px;
 }
+.ev-navbar--link__active:hover{
+  padding-bottom: 1em;
+}
+
 
 @media (min-width: 1120px) {
   .ev-navbar--list {

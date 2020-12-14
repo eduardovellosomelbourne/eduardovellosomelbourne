@@ -25,7 +25,7 @@
 body {
   font-size: var(--text-base-size);
   font-family: var(--font-primary);
-  color: var(--color-text);
+  color: var(--black);
 }
 
 h1 {
@@ -62,8 +62,15 @@ nav {
 
 .large-paragraph{
     font-size: var(--text-lg);
-    margin-top: var(--space-xxs);
+    margin-top: var(--space-md);
     line-height: var(--text-lg);
+}
+
+a, a:visited{
+  color: var(--color-primary);
+}
+a:hover{
+  text-decoration: underline;
 }
 
 /* HOME */
