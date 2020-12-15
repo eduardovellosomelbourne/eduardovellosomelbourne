@@ -1,0 +1,25 @@
+.green_shape{
+  position: absolute;
+  top: 0;
+  left:0;
+  z-index: -1;
+  height: min(50vh, 50vw);
+}
+
+.pink_shape{
+  position: absolute;
+  top: 20%;
+  right:0;
+  z-index: -1;
+  height: min(50vh, 50vw);
+}
+
+.yellow_shape{
+  position: absolute;
+  height: 30vh;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 100%;  
+  
+}
