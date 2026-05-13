@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Eduardo Velloso — Professor of Computer Science at the University of Sydney. Research in Human-Computer Interaction, Mixed Reality, and AI.">
+  <title>Eduardo Velloso</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════
+       HEADER
+       ═══════════════════════════════════════════════════════ -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <div class="site-header__inner">
+        <a href="index.html" class="site-header__logo">Eduardo Velloso</a>
+
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <ul class="site-nav__list" role="list">
+            <li><a href="index.html"        class="site-nav__link">Home</a></li>
+            <li><a href="bio.html"          class="site-nav__link">About</a></li>
+            <li><a href="publications.html" class="site-nav__link">Publications</a></li>
+            <li><a href="research.html"     class="site-nav__link">Research</a></li>
+            <li><a href="contact.html"      class="site-nav__link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button class="site-header__toggle" id="nav-toggle"
+                aria-expanded="false" aria-controls="site-nav"
+                aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════════
+       MAIN
+       ═══════════════════════════════════════════════════════ -->
+  <main class="site-main" id="main">
+
+    <!-- ── HERO ─────────────────────────────────────────── -->
+    <section class="home-hero" aria-label="Introduction">
+      <div class="container">
+        <div class="home-hero__inner">
+
+          <div class="home-hero__content">
+            <span class="home-hero__eyebrow">University of Sydney</span>
+            <h1 class="home-hero__name">Eduardo<br>Velloso</h1>
+            <p class="home-hero__tagline">
+              I design and study how humans interact with emerging technologies,
+              from mixed reality and gaze interfaces to AI-powered systems.
+            </p>
+            <div class="home-hero__actions">
+              <a href="bio.html"          class="btn btn--primary">About me</a>
+              <a href="publications.html" class="btn btn--outline">Publications</a>
+              <a href="research.html"     class="btn btn--outline">Research</a>
+            </div>
+          </div>
+
+          <div class="home-hero__photo">
+            <img src="assets/img/eduardo_profile.png"
+                 alt="Eduardo Velloso"
+                 width="360" height="480">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── STATS STRIP ───────────────────────────────────── -->
+    <div class="home-stats" aria-label="At a glance">
+      <div class="container">
+        <div class="home-stats__inner">
+          <div class="home-stats__item">
+            <span class="home-stats__number">100+</span>
+            <span class="home-stats__label">Publications</span>
+          </div>
+          <div class="home-stats__divider" aria-hidden="true"></div>
+          <div class="home-stats__item">
+            <span class="home-stats__number">15</span>
+            <span class="home-stats__label">Years of research</span>
+          </div>
+          <div class="home-stats__divider" aria-hidden="true"></div>
+          <div class="home-stats__item">
+            <span class="home-stats__number">6</span>
+            <span class="home-stats__label">Best Paper Awards</span>
+          </div>
+          <div class="home-stats__divider" aria-hidden="true"></div>
+          <div class="home-stats__item">
+            <span class="home-stats__number">11</span>
+            <span class="home-stats__label">Honourable Mentions</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── RESEARCH THEMES ──────────────────────────────── -->
+    <section class="home-section" aria-labelledby="home-research-heading">
+      <div class="container">
+        <span class="section-label">Research</span>
+        <h2 class="section-title" id="home-research-heading">
+          What am I currently working on?
+        </h2>
+
+        <div class="research-grid">
+
+          <article class="card card--image">
+            <div class="research-card__thumbnail">
+              <img src="assets/img/mr_collab.png" alt="Researchers collaborating in a mixed reality environment">
+            </div>
+            <div class="research-card">
+              <span class="research-card__number" aria-hidden="true">01</span>
+              <h3 class="research-card__title">Distributed Collaboration<br>in Mixed Reality</h3>
+              <p class="research-card__desc">
+                How do people collaborate when they share digital objects across
+                physical and virtual spaces? We design and evaluate XR systems that
+                support new forms of co-presence, shared attention, and joint action.
+              </p>
+              <a href="research.html" class="research-card__link">Explore theme →</a>
+            </div>
+          </article>
+
+          <article class="card card--image">
+            <div class="research-card__thumbnail">
+              <img src="assets/img/human-ai.png" alt="Human-centred AI and explainable intelligent systems">
+            </div>
+            <div class="research-card">
+              <span class="research-card__number" aria-hidden="true">02</span>
+              <h3 class="research-card__title">Human-Centred AI &amp;<br>Intelligent User Interfaces</h3>
+              <p class="research-card__desc">
+                Building AI systems that adapt to users, explain their reasoning,
+                and augment rather than replace human agency — designing the
+                interaction layer between people and intelligent machines.
+              </p>
+              <a href="research.html" class="research-card__link">Explore theme →</a>
+            </div>
+          </article>
+
+          <article class="card card--image">
+            <div class="research-card__thumbnail">
+              <img src="assets/img/hci_theory.png" alt="HCI theory and research methodology">
+            </div>
+            <div class="research-card">
+              <span class="research-card__number" aria-hidden="true">03</span>
+              <h3 class="research-card__title">HCI Theory &amp;<br>Research Methodology</h3>
+              <p class="research-card__desc">
+                Good research needs good foundations. Work on statistical methods
+                for ordinal and causal reasoning, measurement validity, research
+                synthesis, and the epistemological frameworks that shape how HCI
+                knowledge is produced and applied.
+              </p>
+              <a href="research.html" class="research-card__link">Explore theme →</a>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="home-section__footer">
+          <a href="research.html" class="btn btn--outline">All research themes</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SELECTED PUBLICATIONS ────────────────────────── -->
+    <section class="home-section" aria-labelledby="home-pubs-heading">
+      <div class="container">
+        <span class="section-label">Recent Publications</span>
+        <h2 class="section-title" id="home-pubs-heading">
+          I publish at the top venues in Human-Computer Interaction, including CHI, UIST, TOCHI, and beyond.
+        </h2>
+
+        <div class="pub-list" role="list">
+
+          <article class="pub-item" role="listitem">
+            <span class="pub-item__year">2026</span>
+            <div class="pub-item__body">
+              <span class="pub-item__venue">TVCG</span>
+              <a href="https://doi.ieeecomputersociety.org/10.1109/TVCG.2026.3667949"
+                 class="pub-item__title"
+                 target="_blank" rel="noopener noreferrer">
+                A Probabilistic Approach to Understanding User Preferences for Adaptive Placement of AR Interfaces in Different Physical Environments
+              </a>
+              <p class="pub-item__authors">
+                Zhou, Vera Soto, Bai, Parent, Todi, Jonker, Velloso
+              </p>
+            </div>
+          </article>
+
+          <article class="pub-item" role="listitem">
+            <span class="pub-item__year">2026</span>
+            <div class="pub-item__body">
+              <span class="pub-item__venue">CHI '26</span>
+              <a href="https://dl.acm.org/doi/10.1145/3772318.3790545"
+                 class="pub-item__title"
+                 target="_blank" rel="noopener noreferrer">
+                Is That You or The Machine? Translating Sociocultural Norms Across Distributed Spaces in Blended Realities
+              </a>
+              <p class="pub-item__authors">Wong, Leiva, Velloso</p>
+            </div>
+          </article>
+
+          <article class="pub-item" role="listitem">
+            <span class="pub-item__year">2026</span>
+            <div class="pub-item__body">
+              <span class="pub-item__venue">CHI '26</span>
+              <a href="https://dl.acm.org/doi/10.1145/3772318.3790945"
+                 class="pub-item__title"
+                 target="_blank" rel="noopener noreferrer">
+                Narratives and Perspectives: How AI Summaries Steer Users' Opinions and Engagement on Social Media
+              </a>
+              <p class="pub-item__authors">Govers, Sew, Velloso, Kostakos, Goncalves</p>
+            </div>
+          </article>
+
+          <article class="pub-item" role="listitem">
+            <span class="pub-item__year">2026</span>
+            <div class="pub-item__body">
+              <span class="pub-item__venue">CHI '26</span>
+              <a href="https://dl.acm.org/doi/full/10.1145/3772318.3790508"
+                 class="pub-item__title"
+                 target="_blank" rel="noopener noreferrer">
+                Restoration, Exploration and Transformation: How Youth Engage Character.AI for Fun, Feels and Finding Themselves
+              </a>
+              <p class="pub-item__authors">Blake, Carter, Velloso</p>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="home-section__footer">
+          <a href="publications.html" class="btn btn--outline">View all publications</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════════ -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+      <div class="site-footer__inner">
+        <div>
+          <p class="site-footer__name">Eduardo Velloso</p>
+          <p class="site-footer__role">Professor of Computer Science · University of Sydney</p>
+        </div>
+        <nav class="site-footer__nav" aria-label="Footer navigation">
+          <a href="bio.html">About</a>
+          <a href="publications.html">Publications</a>
+          <a href="research.html">Research</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="site-footer__bottom">
+          <span>© 2026 Eduardo Velloso</span>
+          <span>University of Sydney · School of Computer Science</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

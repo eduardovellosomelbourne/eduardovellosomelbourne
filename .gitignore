@@ -1,0 +1,18 @@
+# CV and source documents — not for public deployment
+CV*.pdf
+CV*.docx
+assets/txt/
+
+# Microsoft Office temp files
+~$*
+*.tmp
+
+# Claude Code settings
+.claude/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Duplicate profile image in root (deployed version is in assets/img/)
+eduardo_profile.png
