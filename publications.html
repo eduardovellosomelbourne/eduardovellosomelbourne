@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Publications — Eduardo Velloso, Professor of Computer Science at the University of Sydney. 100+ papers in HCI, Mixed Reality, AI, and novel interaction.">
+  <title>Publications — Eduardo Velloso</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════
+       HEADER
+       ═══════════════════════════════════════════════════════ -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <div class="site-header__inner">
+        <a href="index.html" class="site-header__logo">Eduardo Velloso</a>
+
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <ul class="site-nav__list" role="list">
+            <li><a href="index.html"        class="site-nav__link">Home</a></li>
+            <li><a href="bio.html"          class="site-nav__link">About</a></li>
+            <li><a href="publications.html" class="site-nav__link">Publications</a></li>
+            <li><a href="research.html"     class="site-nav__link">Research</a></li>
+            <li><a href="contact.html"      class="site-nav__link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button class="site-header__toggle" id="nav-toggle"
+                aria-expanded="false" aria-controls="site-nav"
+                aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════════
+       MAIN
+       ═══════════════════════════════════════════════════════ -->
+  <main class="site-main" id="main">
+
+    <!-- ── PAGE HERO ─────────────────────────────────────── -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <span class="page-hero__eyebrow">Publications</span>
+        <h1 class="page-hero__title" id="page-title">Conference papers<br>and journal articles</h1>
+        <p class="page-hero__desc">
+          Published at CHI, UIST, TOCHI, IMWUT, and beyond
+        </p>
+      </div>
+    </section>
+
+    <!-- ── PUBLICATIONS LAYOUT ─────────────────────────────── -->
+    <div class="container">
+      <div class="pub-layout">
+
+        <!-- Sidebar: topic filter -->
+        <aside class="pub-sidebar">
+          <div class="pub-filters" role="group" aria-label="Filter by topic">
+            <span class="pub-filter-label">Topic</span>
+            <button class="pub-filter-btn is-active" type="button" data-filter="tag" data-value="all">All</button>
+            <button class="pub-filter-btn" type="button" data-filter="tag" data-value="xr">XR</button>
+            <button class="pub-filter-btn" type="button" data-filter="tag" data-value="ai">AI</button>
+            <button class="pub-filter-btn" type="button" data-filter="tag" data-value="eye-tracking">Eye tracking</button>
+            <button class="pub-filter-btn" type="button" data-filter="tag" data-value="gestures">Gestures</button>
+            <button class="pub-filter-btn" type="button" data-filter="tag" data-value="embodied">Embodied</button>
+            <button class="pub-filter-btn" type="button" data-filter="tag" data-value="cscw">CSCW</button>
+            <button class="pub-filter-btn" type="button" data-filter="tag" data-value="sensing">Sensing</button>
+            <button class="pub-filter-btn" type="button" data-filter="tag" data-value="education">Education</button>
+            <button class="pub-filter-btn" type="button" data-filter="tag" data-value="methodology">Methodology</button>
+          </div>
+        </aside>
+
+        <!-- Main: publication list — rendered by publications.js -->
+        <section id="pub-list-container" aria-label="Publication list">
+          <!-- year groups injected here -->
+        </section>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════════ -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+      <div class="site-footer__inner">
+        <div>
+          <p class="site-footer__name">Eduardo Velloso</p>
+          <p class="site-footer__role">Professor of Computer Science · University of Sydney</p>
+        </div>
+        <nav class="site-footer__nav" aria-label="Footer navigation">
+          <a href="bio.html">About</a>
+          <a href="publications.html">Publications</a>
+          <a href="research.html">Research</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="site-footer__bottom">
+          <span>© 2026 Eduardo Velloso</span>
+          <span>University of Sydney · School of Computer Science</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/publications-data.js"></script>
+  <script src="assets/js/publications.js"></script>
+</body>
+</html>

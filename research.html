@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Research — Eduardo Velloso, Professor of Computer Science at the University of Sydney. Five research themes spanning mixed reality, human-centred AI, gaze interaction, embodied learning, and HCI methodology.">
+  <title>Research — Eduardo Velloso</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════
+       HEADER
+       ═══════════════════════════════════════════════════════ -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <div class="site-header__inner">
+        <a href="index.html" class="site-header__logo">Eduardo Velloso</a>
+
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <ul class="site-nav__list" role="list">
+            <li><a href="index.html"        class="site-nav__link">Home</a></li>
+            <li><a href="bio.html"          class="site-nav__link">About</a></li>
+            <li><a href="publications.html" class="site-nav__link">Publications</a></li>
+            <li><a href="research.html"     class="site-nav__link">Research</a></li>
+            <li><a href="contact.html"      class="site-nav__link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button class="site-header__toggle" id="nav-toggle"
+                aria-expanded="false" aria-controls="site-nav"
+                aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════════
+       MAIN
+       ═══════════════════════════════════════════════════════ -->
+  <main class="site-main" id="main">
+
+    <!-- ── PAGE HERO ─────────────────────────────────────── -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <span class="page-hero__eyebrow">Research</span>
+        <h1 class="page-hero__title" id="page-title">Designing interactions.<br>Building understanding.</h1>
+        <p class="page-hero__desc">
+          Designing, studying, and theorising interaction at the intersection
+          of spatial computing, novel interactions, and intelligent systems.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── RESEARCH THEMES ──────────────────────────────── -->
+    <section class="home-section" aria-labelledby="themes-heading">
+      <div class="container">
+        <span class="section-label">Research Themes</span>
+        <h2 class="section-title" id="themes-heading">
+          What am I currently working on?
+        </h2>
+
+        <div class="research-grid">
+
+          <div class="card card--image">
+            <div class="research-card__thumbnail">
+              <img src="assets/img/mr_collab.png" alt="Researchers collaborating in a mixed reality environment">
+            </div>
+            <div class="research-card">
+              <span class="research-card__number">01</span>
+              <h3 class="research-card__title">Distributed Mixed Reality Collaboration</h3>
+              <p class="research-card__desc">
+                How do people work together when their physical spaces are different but their digital environments are shared? Research on spatial heterogeneity, presence, and novel interaction primitives for distributed teams in blended physical–digital spaces.
+              </p>
+              <a href="publications.html" class="research-card__link">View publications →</a>
+            </div>
+          </div>
+
+          <div class="card card--image">
+            <div class="research-card__thumbnail">
+              <img src="assets/img/human-ai.png" alt="Human-centred AI and explainable intelligent systems">
+            </div>
+            <div class="research-card">
+              <span class="research-card__number">02</span>
+              <h3 class="research-card__title">Human-Centred AI &amp; Trustworthy Systems</h3>
+              <p class="research-card__desc">
+                When AI systems make or assist consequential decisions, what do people understand, trust, and contest? Research spanning explainability, algorithmic contestability, responsibility attribution, and the design of AI systems people can meaningfully engage with.
+              </p>
+              <a href="publications.html" class="research-card__link">View publications →</a>
+            </div>
+          </div>
+
+          <div class="card card--image">
+            <div class="research-card__thumbnail">
+              <img src="assets/img/interaction_techniques.png" alt="Gaze-based and multimodal interaction techniques">
+            </div>
+            <div class="research-card">
+              <span class="research-card__number">03</span>
+              <h3 class="research-card__title">Gaze, Multimodal Interaction &amp; Input Techniques</h3>
+              <p class="research-card__desc">
+                Eyes move faster than hands. Research on smooth pursuit eye movements, attention-aware interfaces, gaze–speech fusion, and novel input techniques — from smart watches and VR headsets to handheld devices and large interactive surfaces.
+              </p>
+              <a href="publications.html" class="research-card__link">View publications →</a>
+            </div>
+          </div>
+
+          <div class="card card--image">
+            <div class="research-card__thumbnail">
+              <img src="assets/img/embodied.png" alt="Embodied learning and movement-based interaction">
+            </div>
+            <div class="research-card">
+              <span class="research-card__number">04</span>
+              <h3 class="research-card__title">Embodied Learning, Movement &amp; Performance</h3>
+              <p class="research-card__desc">
+                Learning happens in the body. Research on movement analysis, physical skill acquisition, and immersive environments designed to support athletes, dancers, students, and clinical practitioners — where feedback, timing, and physicality are everything.
+              </p>
+              <a href="publications.html" class="research-card__link">View publications →</a>
+            </div>
+          </div>
+
+          <div class="card card--image">
+            <div class="research-card__thumbnail">
+              <img src="assets/img/hci_theory.png" alt="HCI theory and research methodology">
+            </div>
+            <div class="research-card">
+              <span class="research-card__number">05</span>
+              <h3 class="research-card__title">HCI Theory &amp; Research Methodology</h3>
+              <p class="research-card__desc">
+                Good research needs good foundations. Work on statistical methods for data analysis and causal reasoning, measurement validity, research synthesis, and the epistemological frameworks that shape how HCI knowledge is produced and applied.
+              </p>
+              <a href="publications.html" class="research-card__link">View publications →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PHD STUDENTS ──────────────────────────────────── -->
+    <section class="home-section" aria-labelledby="students-heading">
+      <div class="container">
+        <span class="section-label">Research Students</span>
+        <h2 class="section-title" id="students-heading">
+          Who is working with me?
+        </h2>
+
+        <h3 class="student-group-heading">Current</h3>
+        <ul class="student-grid" role="list">
+          <li class="student-card">
+            <span class="student-card__name">Emily Wong</span>
+            <span class="student-card__area">Theory building in HCI</span>
+          </li>
+          <li class="student-card">
+            <span class="student-card__name">Aochen Jiao</span>
+            <span class="student-card__area">Nonverbal mediation in distributed MR</span>
+          </li>
+          <li class="student-card">
+            <span class="student-card__name">Wendi Yu</span>
+            <span class="student-card__area">Interaction techniques in VR &amp; object selection</span>
+          </li>
+          <li class="student-card">
+            <span class="student-card__name">Annabel Blake</span>
+            <span class="student-card__area">Children's relationships with conversational AI</span>
+          </li>
+          <li class="student-card">
+            <span class="student-card__name">Tinghui Li</span>
+            <span class="student-card__area">Mixed reality under physical constraints</span>
+          </li>
+          <li class="student-card">
+            <span class="student-card__name">Marvin Bai</span>
+            <span class="student-card__area">AI proxy agents in collaborative meetings</span>
+          </li>
+          <li class="student-card">
+            <span class="student-card__name">Jarod Govers</span>
+            <span class="student-card__area">AI, trust, and social media dynamics</span>
+          </li>
+          <li class="student-card">
+            <span class="student-card__name">Joe Brailsford</span>
+            <span class="student-card__area">Responsibility &amp; ethics in AI systems</span>
+          </li>
+          <li class="student-card">
+            <span class="student-card__name">Josephine Delore</span>
+            <span class="student-card__area">Trust and control in multi-objective AI systems</span>
+          </li>
+        </ul>
+
+        <h3 class="student-group-heading">Alumni</h3>
+        <ul class="student-grid" role="list">
+          <li class="student-card">
+            <span class="student-card__name">Emily Wong</span>
+            <span class="student-card__badge">MPhil · 2025</span>
+            <span class="student-card__area">Distributed mixed reality &amp; social presence</span>
+          </li>
+          <li class="student-card">
+            <span class="student-card__name">Saumya Pareek</span>
+            <span class="student-card__badge">PhD · 2026</span>
+            <span class="student-card__area">AI-assisted decision-making &amp; explainability</span>
+          </li>
+          <li class="student-card">
+            <span class="student-card__name">Ulan Kelesbekov</span>
+            <span class="student-card__badge">MPhil · 2025</span>
+            <span class="student-card__area">Haptic interfaces &amp; object manipulation in VR</span>
+          </li>
+          <li class="student-card">
+            <span class="student-card__name">Henrietta Lyons</span>
+            <span class="student-card__badge">PhD · 2024</span>
+            <span class="student-card__area">Algorithmic contestability &amp; human review of AI decisions</span>
+          </li>
+          <li class="student-card">
+            <span class="student-card__name">Gabriele Marini</span>
+            <span class="student-card__badge">PhD · 2024</span>
+            <span class="student-card__area">Indoor localisation &amp; mobility sensing in clinical settings</span>
+          </li>
+          <li class="student-card">
+            <span class="student-card__name">Ebrahim Babaei</span>
+            <span class="student-card__badge">PhD · 2023</span>
+            <span class="student-card__area">Measurement of cognitive &amp; physiological states in HCI</span>
+          </li>
+          <li class="student-card">
+            <span class="student-card__name">Difeng Yu</span>
+            <span class="student-card__badge">PhD · 2023</span>
+            <span class="student-card__area">Interaction techniques for object selection in VR</span>
+          </li>
+          <li class="student-card">
+            <span class="student-card__name">Qiushi Zhou</span>
+            <span class="student-card__badge">PhD · 2023</span>
+            <span class="student-card__area">Mirror-based mixed reality for movement &amp; embodied interaction</span>
+          </li>
+          <li class="student-card">
+            <span class="student-card__name">Brandon Syiem</span>
+            <span class="student-card__badge">PhD · 2022</span>
+            <span class="student-card__area">Attentional issues in handheld augmented reality</span>
+          </li>
+          <li class="student-card">
+            <span class="student-card__name">Gabriele Mirra</span>
+            <span class="student-card__badge">PhD · 2022</span>
+            <span class="student-card__area">Computational design &amp; interactive built environments</span>
+          </li>
+          <li class="student-card">
+            <span class="student-card__name">Anam Khan</span>
+            <span class="student-card__badge">PhD · 2021</span>
+            <span class="student-card__area">Gaze &amp; speech for implicit interaction</span>
+          </li>
+          <li class="student-card">
+            <span class="student-card__name">Joshua Newn</span>
+            <span class="student-card__badge">PhD · 2020</span>
+            <span class="student-card__area">Gaze-based interaction &amp; intention recognition</span>
+          </li>
+          <li class="student-card">
+            <span class="student-card__name">Yousef Kowsar</span>
+            <span class="student-card__badge">PhD · 2020</span>
+            <span class="student-card__area">Machine learning for motion pattern recognition</span>
+          </li>
+          <li class="student-card">
+            <span class="student-card__name">Namrata Srivastava</span>
+            <span class="student-card__badge">PhD · 2020</span>
+            <span class="student-card__area">Gaze &amp; physiological sensing for learning analytics</span>
+          </li>
+          <li class="student-card">
+            <span class="student-card__name">Emad Alghamdi</span>
+            <span class="student-card__badge">PhD · 2020</span>
+            <span class="student-card__area">Linguistic complexity in instructional video design</span>
+          </li>
+          <li class="student-card">
+            <span class="student-card__name">Chu Luo</span>
+            <span class="student-card__badge">PhD · 2019</span>
+            <span class="student-card__area">Testing methods for mobile context-aware applications</span>
+          </li>
+          <li class="student-card">
+            <span class="student-card__name">Antony D. Chacon</span>
+            <span class="student-card__badge">MPhil · 2018</span>
+            <span class="student-card__area">Haptic feedback for physiotherapy training</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════════ -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+      <div class="site-footer__inner">
+        <div>
+          <p class="site-footer__name">Eduardo Velloso</p>
+          <p class="site-footer__role">Professor of Computer Science · University of Sydney</p>
+        </div>
+        <nav class="site-footer__nav" aria-label="Footer navigation">
+          <a href="bio.html">About</a>
+          <a href="publications.html">Publications</a>
+          <a href="research.html">Research</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="site-footer__bottom">
+          <span>© 2026 Eduardo Velloso</span>
+          <span>University of Sydney · School of Computer Science</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
