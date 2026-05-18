@@ -20,6 +20,18 @@ var PUBLICATIONS_DATA = [
 
   /* ── 2026 ──────────────────────────────────────────────────── */
 
+  { year:2026, type:"conference",
+    title:"Systemic Futures: Integrating Critical Speculation and Systemic Design Pragmatism",
+    authors:"Wong, Paxton, Pook, Howe, Grønbæk, Johal, Velloso, Vetere",
+    venue:"DIS '26", url:"https://dl.acm.org/doi/10.1145/3800645.3812901",
+    tags:["xr","methodology"], award:"honourable-mention" },
+
+  { year:2026, type:"conference",
+    title:"Reclaiming Productivity: Critical Perspectives on Speculative Futures in the Architecture, Engineering, and Construction Industry",
+    authors:"Wong, Dillon, Johal, Velloso, Howe, Vetere",
+    venue:"CHIWORK '26", url:"https://doi.org/10.1145/3808045.3808064",
+    tags:["cscw"] },
+
   { year:2026, type:"journal",
     title:"A Probabilistic Approach to Understanding User Preferences for Adaptive Placement of AR Interfaces in Different Physical Environments",
     authors:"Zhou, Vera Soto, Bai, Parent, Todi, Jonker, Velloso",
