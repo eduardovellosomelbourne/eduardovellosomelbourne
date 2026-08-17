@@ -833,6 +833,26 @@ p {
   border-radius: 2px;
 }
 
+/* Locally hosted author's version */
+.pub-item__pdf {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  color: var(--clr-accent);
+  padding: 0.1em var(--sp-2);
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  white-space: nowrap;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.pub-item__pdf:hover,
+.pub-item__pdf:focus-visible {
+  background: var(--clr-accent);
+  color: #fff;
+}
+
 /* Award badges */
 .pub-item__badge {
   font-size: var(--fs-xs);

@@ -54,6 +54,12 @@
       ? '<a href="' + esc(p.url) + '" class="pub-item__title" target="_blank" rel="noopener noreferrer">' + esc(p.title) + '</a>'
       : '<span class="pub-item__title">' + esc(p.title) + '</span>';
 
+    var pdfLink = p.pdf
+      ? '<a href="' + esc(p.pdf) + '" class="pub-item__pdf"'
+        + ' aria-label="Author&#39;s version PDF — ' + esc(p.title) + '"'
+        + ' target="_blank" rel="noopener noreferrer">PDF</a>'
+      : '';
+
     return '<article class="pub-item" role="listitem"'
       + ' data-year="' + p.year + '"'
       + ' data-tags="' + esc(tagStr) + '">'
@@ -62,6 +68,7 @@
       +     '<span class="pub-item__venue">' + esc(p.venue) + '</span>'
       +     typeBadge
       +     badge
+      +     pdfLink
       +   '</div>'
       +   titleEl
       +   '<p class="pub-item__authors">' + esc(p.authors) + '</p>'

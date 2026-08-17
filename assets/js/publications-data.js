@@ -8,6 +8,7 @@
      authors – Last, Last, … (last-name list)
      venue   – short venue string shown on screen
      url     – direct link to paper (or null)
+     pdf     – path to a locally hosted author's version (optional)
      tags    – array of tag slugs (see list below)
      award   – "best-paper" | "honourable-mention" | null
    Tags:
@@ -19,6 +20,13 @@
 var PUBLICATIONS_DATA = [
 
   /* ── 2026 ──────────────────────────────────────────────────── */
+
+  { year:2026, type:"journal",
+    title:"Grand Challenges for Distributed Mixed Reality Collaboration: A Research Agenda",
+    authors:"Grønbæk, Genay, Irlitti, Syiem, Knibbe, Wong, Feuchtner, Li, Bai, Velloso",
+    venue:"Found. Trends HCI", url:"https://doi.org/10.1108/FTHCI-08-2025-0109",
+    pdf:"assets/pdf/gronbaek-2026-grand-challenges-distributed-mr.pdf",
+    tags:["xr","cscw","methodology"] },
 
   { year:2026, type:"conference",
     title:"Systemic Futures: Integrating Critical Speculation and Systemic Design Pragmatism",
