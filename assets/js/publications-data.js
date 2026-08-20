@@ -21,6 +21,13 @@ var PUBLICATIONS_DATA = [
 
   /* ── 2026 ──────────────────────────────────────────────────── */
 
+  { year:2026, type:"conference",
+    title:"A Table on the Beach: Probing Odd Invitations by Scaling Conspicuity",
+    authors:"Hendriks, Bruns, Hoggenmueller, Withana, Velloso, Obaid",
+    venue:"NordiCHI '26", url:"https://doi.org/10.1145/3829807.3829809",
+    pdf:"assets/pdf/hendriks-2026-table-on-the-beach.pdf",
+    tags:["tangible","methodology"] },
+
   { year:2026, type:"journal",
     title:"Grand Challenges for Distributed Mixed Reality Collaboration: A Research Agenda",
     authors:"Grønbæk, Genay, Irlitti, Syiem, Knibbe, Wong, Feuchtner, Li, Bai, Velloso",
